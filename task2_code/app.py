@@ -56,6 +56,7 @@ def cat_page(number):
 #
 
 if __name__ == '__main__':
+	global catlist
 	catlist = get_catlist()
 	app.run(host='0.0.0.0')
 #
