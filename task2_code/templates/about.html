@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Смотрим кота</title>
+
+<style type="text/css">
+
+ul {
+font-size: 20px;
+}
+</style>
+</head>
+
+<body>
+<h1>Информация про кота</h1>
+<ul>
+  <li>Порода: {{item.breed}}</li>
+  <li>Имя: {{item.name}}</li>
+  <li>Возраст в месяцах: {{item.age}}</li>
+  <li>Описание: {{item.description}}</li>
+</ul>
+<img width = "600" src="{{  url_for('static', filename='images/')  }}{{  item.picture  }}.jpg">
+</body>
+</html>
