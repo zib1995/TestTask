@@ -42,7 +42,7 @@ def get_catlist():
 	return catlist
 #
 
-catlist = get_catlist()
+catlist = []
 
 @app.route('/')
 @app.route('/index')
@@ -56,5 +56,6 @@ def cat_page(number):
 #
 
 if __name__ == '__main__':
+	catlist = get_catlist()
 	app.run(host='0.0.0.0')
 #
