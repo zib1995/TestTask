@@ -1,6 +1,7 @@
 
-
 # Вспомогательные функции для наполнения базы данных
+
+from app import db, Cats
 
 def add(breed, name, age, description, picture):
 	cat = Cats(breed = breed, name = name, age = age, description = description, picture = picture)
@@ -42,4 +43,3 @@ def filling():
 	add('Меконгский бобтейл', 'Маус', 9, 'Выживает после подения с любой высоты', 'pic6')
 	add('Нибелунг', 'Ганс', 32, 'Слишком высокомерный взгляд', 'pic7')
 #
-
